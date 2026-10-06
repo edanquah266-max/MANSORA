@@ -1,0 +1,655 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us | MANSORA Consulting Services{% endblock %}
+
+{% block content %}
+
+<div class="contact-page">
+
+    <!-- ================================
+         HERO
+    ================================= -->
+    <section class="contact-hero">
+
+        <div class="contact-grid"></div>
+
+        <div class="contact-hero-orb orb-1"></div>
+        <div class="contact-hero-orb orb-2"></div>
+        <div class="contact-hero-orb orb-3"></div>
+
+        <div class="hero-floating-card card-one">
+            <span>01</span>
+            BUSINESS
+        </div>
+
+        <div class="hero-floating-card card-two">
+            <span>02</span>
+            STRATEGY
+        </div>
+
+        <div class="hero-floating-card card-three">
+            <span>03</span>
+            GROWTH
+        </div>
+
+        <div class="contact-hero-inner">
+
+            <div class="contact-hero-badge">
+                <span class="pulse-dot"></span>
+                MANSORA CONSULTING SERVICES
+            </div>
+
+            <h1>
+                LET'S
+                <span>TALK.</span>
+            </h1>
+
+            <p>
+                Your next business decision could change everything.
+                Tell us where you are, where you want to go,
+                and let's build the path forward together.
+            </p>
+
+            <button
+                class="contact-scroll-btn"
+                type="button"
+                data-scroll-target="#conversation"
+            >
+                START A CONVERSATION
+                <span>↓</span>
+            </button>
+
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span>SCROLL TO EXPLORE</span>
+            <div class="scroll-line"></div>
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         INTRO
+    ================================= -->
+    <section class="contact-intro reveal-section">
+
+        <div class="contact-section-tag">
+            <span>01</span>
+            START HERE
+        </div>
+
+        <div class="contact-intro-content">
+
+            <div class="intro-mini-label">
+                YOUR BUSINESS. YOUR CHALLENGE. YOUR NEXT MOVE.
+            </div>
+
+            <h2>
+                Tell us what
+                <span>you need.</span>
+            </h2>
+
+            <p>
+                You don't need to have everything figured out.
+                Simply tell us what's on your mind and our team
+                will take it from there.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         CONTACT FORM
+    ================================= -->
+    <section
+        class="contact-form-section reveal-section"
+        id="conversation"
+    >
+
+        <div class="form-wrapper">
+
+            <div class="form-heading">
+
+                <span>02 — YOUR MESSAGE</span>
+
+                <h2>
+                    Start the
+                    <strong>conversation.</strong>
+                </h2>
+
+                <p>
+                    Let Us Know What You Want And How We Can Help You
+                </p>
+
+            </div>
+
+
+            <form
+                class="mansora-contact-form"
+                id="contactForm"
+            >
+
+                <div class="form-field">
+                    <label for="name">
+                        YOUR NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-field">
+                    <label for="email">
+                        EMAIL ADDRESS
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-field">
+                    <label for="service">
+                        WHAT CAN WE HELP WITH?
+                    </label>
+
+                    <select
+                        id="service"
+                        name="service"
+                        required
+                    >
+                        <option value="">
+                            Select an area
+                        </option>
+
+                        <option value="Business Advisory">
+                            Business Advisory
+                        </option>
+
+                        <option value="Financial & Accounting Support">
+                            Financial & Accounting Support
+                        </option>
+
+                        <option value="Strategic Consulting">
+                            Strategic Consulting
+                        </option>
+
+                        <option value="Business Growth">
+                            Business Growth
+                        </option>
+
+                        <option value="Other Enquiry">
+                            Other Enquiry
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="phone">
+                        PHONE NUMBER
+                        <small>OPTIONAL</small>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+233 XX XXX XXXX"
+                    >
+
+                </div>
+
+
+                <div class="form-field form-field-full">
+
+                    <label for="message">
+                        YOUR QUESTION OR MESSAGE
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us about your challenge, question or idea..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-bottom">
+
+                    <p>
+                        By submitting this form, you agree to be
+                        contacted by MANSORA regarding your enquiry.
+                    </p>
+
+                    <button
+                        type="submit"
+                        class="mansora-submit"
+                    >
+
+                        <span class="submit-text">
+                            SEND MESSAGE
+                        </span>
+
+                        <span class="submit-loader"></span>
+
+                        <span class="submit-icon">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="form-success"
+                    id="formSuccess"
+                >
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <strong>
+                        MESSAGE RECEIVED.
+                    </strong>
+
+                    <span>
+                        Thank you for reaching out to MANSORA.
+                        We'll be in touch.
+                    </span>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         CONTACT INFORMATION
+    ================================= -->
+    <section class="contact-info-section reveal-section">
+
+        <div class="contact-info-heading">
+
+            <span>03 — FIND MANSORA</span>
+
+            <h2>
+                Let's stay
+                <strong>connected.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-info-grid">
+
+            <!-- LOCATION -->
+            <div class="contact-info-card">
+
+                <div class="info-icon">
+                        <img
+                            src="{{ url_for('static', filename='images/loc.png') }}"
+                            alt=""
+                        >
+                </div>
+
+                <span><b>OFFICE</b></span>
+
+                <h3>
+                    Accra, Ghana
+                </h3>
+
+                <p>
+                    Our consulting team is available
+                    to support businesses from our
+                    Accra office.
+                </p>
+
+            </div>
+
+
+            <!-- PHONE -->
+            <div class="contact-info-card">
+                <div class="info-icon">
+                        <img
+                            src="{{ url_for('static', filename='images/phone.png') }}"
+                            alt=""
+                        >
+                </div>
+
+                <span><b>PHONE</b></span>
+
+                <h3>
+                    +233 547 484 944
+                </h3>
+
+                <p>
+                    +233 567 464 7373
+                </p>
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="contact-info-card">
+                <div class="info-icon">
+                        <img
+                            src="{{ url_for('static', filename='images/email.png') }}"
+                            alt=""
+                        >
+                </div>
+
+                <span><b>EMAIL</b></span>
+
+                <h3>
+                    Mansora@ghana.com
+                </h3>
+
+                <p>
+                    Send us your enquiry anytime.
+                </p>
+
+            </div>
+
+
+            <!-- HOURS -->
+            <div class="contact-info-card">
+                <div class="info-icon">
+                        <img
+                            src="{{ url_for('static', filename='images/time.png') }}"
+                            alt=""
+                        >
+                </div>
+
+                <span><b>BUSINESS HOURS</b></span>
+
+                <h3>
+                    8:00 AM — 10:00 PM
+                </h3>
+
+                <p>
+                    Monday — Sunday
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ================================
+     GOOGLE MAP
+================================= -->
+
+<section class="mansora-map-section reveal-section">
+
+    <div class="map-container">
+
+        <div class="map-heading">
+
+            <span>04 — OUR LOCATION</span>
+
+            <h2>
+                Find
+                <strong>MANSORA.</strong>
+            </h2>
+
+        </div>
+
+        <div class="map-frame">
+
+            <iframe
+                src="https://www.google.com/maps?q=Grand+Star+Hotel,+Haatso+Bohye,+Accra,+Ghana&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="map-overlay-card">
+
+                <span>MANSORA OFFICE</span>
+
+                <strong>
+                    Haatso Bohye, Accra
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+    <!-- ================================
+         BOOKING CTA
+    ================================= -->
+    <section class="booking-section reveal-section">
+
+        <div class="booking-glow"></div>
+
+        <div class="booking-content">
+
+            <span>
+                PREFER A DIRECT CONVERSATION?
+            </span>
+
+            <h2>
+                Let's talk about
+                <strong>your business.</strong>
+            </h2>
+
+            <p>
+                Book a consultation with MANSORA and let's
+                discuss your goals, challenges and next steps.
+            </p>
+            <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ataakonadu50@gmail.com"
+            class="booking-button"
+            target="_blank"
+        >
+            Contact Us
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         NEWSLETTER
+    ================================= -->
+    <section class="newsletter-section reveal-section">
+
+        <div class="newsletter-inner">
+
+            <div class="newsletter-copy">
+
+                <span>
+                    MANSORA INSIGHTS
+                </span>
+
+                <h2>
+                    Stay in the
+                    <strong>loop.</strong>
+                </h2>
+
+                <p>
+                    Receive occasional business insights,
+                    practical ideas and updates from MANSORA.
+                </p>
+
+            </div>
+
+
+            <form
+                class="newsletter-form"
+                id="newsletterForm"
+            >
+
+                <div class="newsletter-input">
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        name="newsletterEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <button type="submit">
+
+                        <span>
+                            SUBSCRIBE
+                        </span>
+
+                        <b>→</b>
+
+                    </button>
+
+                </div>
+
+                <small id="newsletterMessage">
+                    No spam. Just useful ideas.
+                </small>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
+<div class="mansora-connect-widget">
+
+    <button
+        class="mansora-connect-toggle"
+        id="mansoraConnectToggle"
+        type="button"
+    >
+        <span class="connect-icon">✉</span>
+        <span class="connect-label">CONNECT WITH US</span>
+        <span class="connect-arrow">↑</span>
+    </button>
+
+
+    <div
+        class="mansora-connect-menu"
+        id="mansoraConnectMenu"
+    >
+
+        <!-- WHATSAPP -->
+        <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span class="connect-platform-icon whatsapp">
+                <img
+                    src="{{ url_for('static', filename='images/wassup.png') }}"
+                    alt="WhatsApp"
+                >
+            </span>
+
+            <span class="connect-platform-text">
+                <strong>WhatsApp</strong>
+                <small>Chat with us</small>
+            </span>
+
+            <b>↗</b>
+        </a>
+
+
+        <!-- FACEBOOK -->
+        <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span class="connect-platform-icon facebook">
+                <img
+                    src="{{ url_for('static', filename='images/face.png') }}"
+                    alt="Facebook"
+                >
+            </span>
+
+            <span class="connect-platform-text">
+                <strong>Facebook</strong>
+                <small>Connect with us</small>
+            </span>
+
+            <b>↗</b>
+        </a>
+
+
+        <!-- INSTAGRAM -->
+        <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span class="connect-platform-icon instagram">
+                <img
+                    src="{{ url_for('static', filename='images/insta.png') }}"
+                    alt="Instagram"
+                >
+            </span>
+
+            <span class="connect-platform-text">
+                <strong>Instagram</strong>
+                <small>Follow our journey</small>
+            </span>
+
+            <b>↗</b>
+        </a>
+
+
+        <!-- LINKEDIN -->
+        <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span class="connect-platform-icon linkedin">
+                <img
+                    src="{{ url_for('static', filename='images/link.png') }}"
+                    alt="LinkedIn"
+                >
+            </span>
+
+            <span class="connect-platform-text">
+                <strong>LinkedIn</strong>
+                <small>Professional network</small>
+            </span>
+
+            <b>↗</b>
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+{% endblock %}

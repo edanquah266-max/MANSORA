@@ -1,0 +1,467 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+MANSORA Consulting & Business Solutions | We Make Your Business Better
+
+{% endblock %}
+
+{% block content %}
+
+<!-- =====================================================
+     MANSORA HERO SECTION
+     ===================================================== -->
+
+<section class="hero">
+
+    <!-- Background image -->
+
+    <div class="hero-background"></div>
+
+    <!-- Blue / Purple overlay -->
+
+    <div class="hero-overlay"></div>
+
+    <!-- Hero content -->
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                CONSULTING • STRATEGY • GROWTH
+            </span>
+
+            <h1 class="hero-title">
+
+                MANSORA
+
+                <span>Consulting & Business Solutions</span>
+
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Turning Financial Clarity Into Business Growth
+
+            </p>
+
+            <p class="hero-description">
+                At <strong>MANSORA Consulting & Business Solutions</strong>, we help businesses <strong>understand their numbers, manage risks, identify opportunities and make better decisions.</strong>
+                We provide practical accounting, <strong><i>tax, financial management and business advisory solutions</i></strong> to entrepreneurs, SMEs and organisations seeking dependable professional support.
+                We go beyond compliance and record-keeping. We help our clients strengthen financial management, improve controls, manage risk, enhance performance and build a stronger foundation for sustainable growth.
+                We also provide targeted training and capacity-building where it can strengthen the financial and business capabilities of our clients and their teams.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="{{ url_for('services') }}" class="btn btn-primary">
+
+                    Explore Our Services
+
+                </a>
+
+                <a href="{{ url_for('contact_us') }}" class="btn btn-light">
+
+                    Talk to MANSORA
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Large floating logo -->
+
+    <div class="hero-logo">
+
+        <img
+            src="{{ url_for('static', filename='images/MANSORA.png') }}"
+            alt="MANSORA Consulting Services Logo"
+        >
+
+    </div>
+
+    <!-- Scroll indicator -->
+
+    <div class="hero-scroll">
+
+        <span>Scroll to explore</span>
+
+        <div class="scroll-line"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRODUCTION / HOME INFORMATION SECTION
+     ===================================================== -->
+
+<section class="intro-section reveal-section">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+            <!-- Image -->
+
+            <div class="intro-image">
+
+                <div class="intro-image-frame">
+
+                    <img
+                        src="{{ url_for('static', filename='images/MAN.png') }}"
+                        alt="MANSORA Consulting Professional"
+                    >
+
+                    <div class="image-accent"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="intro-content">
+
+                <span class="section-label">
+
+                    ABOUT MANSORA
+
+                </span>
+
+                <h2>
+
+                    Turning Financial Clarity into
+
+                    <span class="gradient-text">
+                        Business Growth.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    At <strong>MANSORA Consulting Services</strong>,
+                    we help businesses understand their numbers,
+                    manage risks, identify opportunities and make
+                    better decisions.
+
+                </p>
+
+
+                <p>
+
+                    We provide practical <strong>accounting, tax and
+                    business advisory solutions</strong> to
+                    entrepreneurs, SMEs and organisations seeking
+                    dependable financial and management support.
+                    
+                </p>
+
+
+                <p>
+
+                    We go beyond compliance and record-keeping.
+                    We work with our clients to strengthen financial
+                    management, improve controls, manage risk,
+                    identify opportunities and build a stronger
+                    foundation for sustainable growth.
+
+                </p>
+
+
+                <a href="{{ url_for('why_mansora') }}" class="btn btn-primary">
+
+                    Discover MANSORA
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR PROMISE
+     ===================================================== -->
+
+<section class="intro-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">
+
+                OUR PROMISE
+
+            </span>
+
+            <h2>
+
+                We Make Your Business Better.
+
+                <span class="gradient-text">
+                   Smart Solutions. Stronger Business
+                
+                </span>
+
+            </h2>
+            <p> <h4><i> 
+                <a href="{{ url_for('contact_us') }}" class="btn btn-primary">
+                Talk to Us
+            </p></h4></i></a>
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value-card">
+
+                <div class="value-number">01</div>
+
+                <h3>
+                    Better Understanding
+                </h3>
+
+                <p>
+
+                    We help clients understand their financial
+                    position and the information behind their
+                    business decisions.
+
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">02</div>
+
+                <h3>
+                    Better Decisions
+                </h3>
+
+                <p>
+
+                    We provide practical financial and business
+                    insight to support confident and informed
+                    decision-making.
+
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">03</div>
+
+                <h3>
+                    Better Controls
+                </h3>
+
+                <p>
+
+                    We help businesses strengthen their financial
+                    management, internal controls and risk
+                    management practices.
+
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">04</div>
+
+                <h3>
+                    Better Performance
+                </h3>
+
+                <p>
+
+                    We focus on practical solutions that help
+                    organisations identify opportunities and
+                    achieve sustainable growth.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONSULTING VALUES
+     ===================================================== -->
+
+<section class="values-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">
+
+                OUR VALUES
+
+            </span>
+
+            <h2>
+
+                The MANSORA
+
+                <span class="gradient-text">
+                    difference.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value-card">
+
+                <div class="value-number">01</div>
+
+                <h3>
+                    Clarity
+                </h3>
+
+                <p>
+
+                    We simplify complex financial and business
+                    matters so our clients can make informed
+                    decisions.
+
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">02</div>
+
+                <h3>
+                    Integrity
+                </h3>
+
+                <p>
+
+                    We approach every engagement with honesty,
+                    professionalism and accountability.
+
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">03</div>
+
+                <h3>
+                    Responsiveness
+                </h3>
+
+                <p>
+
+                    We listen carefully and respond to the unique
+                    needs of every client.
+
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <div class="value-number">04</div>
+
+                <h3>
+                    Impact
+                </h3>
+
+                <p>
+
+                    Our focus is on practical solutions that create
+                    measurable and lasting business value.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CALL TO ACTION
+     ===================================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span class="section-label">
+
+                READY TO MOVE FORWARD?
+
+            </span>
+
+            <h2>
+
+                Let's make your
+
+                <span>
+                    business better.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Start a conversation with MANSORA and discover practical ways to
+                strengthen your business.
+
+            </p>
+
+            <a href="{{ url_for('who_we_serve') }}" class="btn btn-primary">
+
+                KNOW WHO WE SERVE
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

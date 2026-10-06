@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}
+        MANSORA Consulting & Business Solutions
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+         NAVIGATION
+         ========================================================= -->
+
+    <header>
+
+        <nav>
+
+            <!-- BRAND -->
+
+            <a href="{{ url_for('home') }}" class="brand-logo">
+
+                <span class="brand-main">
+                    MANSORA
+                </span>
+
+                <span class="brand-service">
+                    Consulting & Business Solutions
+                </span>
+
+            </a>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div class="nav-links">
+
+
+                <!-- ABOUT -->
+
+                {% if request.endpoint == 'about' %}
+
+                    <a href="{{ url_for('home') }}"
+                       class="nav-back-home">
+
+                        <span class="back-home-arrow">←</span>
+
+                        <span class="back-home-text">
+                            Back Home
+                        </span>
+
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('about') }}"
+                       class="nav-link">
+
+                      <b>About Us</b>
+
+                    </a>
+
+                {% endif %}
+
+
+
+                <!-- SERVICES -->
+
+                {% if request.endpoint == 'services' %}
+
+                    <a href="{{ url_for('home') }}"
+                       class="nav-back-home">
+
+                        <span class="back-home-arrow">←</span>
+
+                        <span class="back-home-text">
+                            Back Home
+                        </span>
+
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('services') }}"
+                       class="nav-link">
+
+                      <b> Services</b>
+
+                    </a>
+
+                {% endif %}
+
+
+
+                <!-- OUR APPROACH -->
+
+                {% if request.endpoint == 'approach' %}
+
+                    <a href="{{ url_for('home') }}"
+                       class="nav-back-home">
+
+                        <span class="back-home-arrow">←</span>
+
+                        <span class="back-home-text">
+                            Back Home
+                        </span>
+
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('approach') }}"
+                       class="nav-link">
+
+                       <b>Our Approach</b>
+
+                    </a>
+
+                {% endif %}
+
+
+
+                <!-- WHY MANSORA -->
+
+                {% if request.endpoint == 'why_mansora' %}
+
+                    <a href="{{ url_for('home') }}"
+                       class="nav-back-home">
+
+                        <span class="back-home-arrow">←</span>
+
+                        <span class="back-home-text">
+                            Back Home
+                        </span>
+
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('why_mansora') }}"
+                       class="nav-link">
+
+                        <b>Why MANSORA</b>
+
+                    </a>
+
+                {% endif %}
+
+
+
+                <!-- WHO WE SERVE -->
+
+                {% if request.endpoint == 'who_we_serve' %}
+
+                    <a href="{{ url_for('home') }}"
+                       class="nav-back-home">
+
+                        <span class="back-home-arrow">←</span>
+
+                        <span class="back-home-text">
+                            Back Home
+                        </span>
+
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('who_we_serve') }}"
+                       class="nav-link">
+
+                       <b>Who We Serve</b>
+
+                    </a>
+
+                {% endif %}
+
+
+
+                <!-- CONTACT US -->
+
+                {% if request.endpoint == 'contact_us' %}
+
+                    <a href="{{ url_for('home') }}"
+                       class="nav-back-home contact-back-home">
+
+                        <span class="back-home-arrow">←</span>
+
+                        <span class="back-home-text">
+                            Back Home
+                        </span>
+
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('contact_us') }}"
+                       class="nav-contact-link">
+
+                       <b>Contact Us</b>
+
+                    </a>
+
+                {% endif %}
+
+
+
+                <!-- =================================================
+                     LANGUAGE SELECTOR
+                     ================================================= -->
+
+                <div class="language-dropdown">
+
+                    <button
+                        type="button"
+                        class="language-toggle"
+                        id="languageToggle"
+                        aria-expanded="false"
+                        aria-label="Select language"
+                    >
+
+                        <span>EN</span>
+
+                        <span class="language-arrow">
+                            ⌄
+                        </span>
+
+                    </button>
+
+
+                    <div
+                        class="language-menu"
+                        id="languageMenu"
+                    >
+
+                        <a href="#"
+                           data-language="en">
+                            English
+                        </a>
+
+                        <a href="#"
+                           data-language="fr">
+                            Français
+                        </a>
+
+                        <a href="#"
+                           data-language="es">
+                            Español
+                        </a>
+
+                        <a href="#"
+                           data-language="de">
+                            Deutsch
+                        </a>
+
+                        <a href="#"
+                           data-language="pt">
+                            Português
+                        </a>
+
+                        <a href="#"
+                           data-language="it">
+                            Italiano
+                        </a>
+
+                        <a href="#"
+                           data-language="ar">
+                            العربية
+                        </a>
+
+                        <a href="#"
+                           data-language="zh">
+                            中文
+                        </a>
+
+                        <a href="#"
+                           data-language="ja">
+                            日本語
+                        </a>
+
+                        <a href="#"
+                           data-language="ko">
+                            한국어
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+         ========================================================= -->
+
+    <main>
+
+
+        <!-- =====================================================
+             MANSORA — FLOATING CONNECT WIDGET
+             ===================================================== -->
+
+        <div class="mansora-connect-widget">
+
+            <button
+                class="mansora-connect-toggle"
+                id="mansoraConnectToggle"
+                type="button"
+            >
+
+                <span class="connect-icon">
+                    ✉
+                </span>
+
+                <span class="connect-label">
+                    CONNECT WITH US
+                </span>
+
+                <span class="connect-arrow">
+                    ↑
+                </span>
+
+            </button>
+
+
+            <div
+                class="mansora-connect-menu"
+                id="mansoraConnectMenu"
+            >
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span class="connect-platform-icon whatsapp">
+
+                        <img
+                            src="{{ url_for('static', filename='images/wassup.png') }}"
+                            alt="WhatsApp"
+                        >
+
+                    </span>
+
+
+                    <span class="connect-platform-text">
+
+                        <strong>
+                            WhatsApp
+                        </strong>
+
+                        <small>
+                            Chat with us
+                        </small>
+
+                    </span>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span class="connect-platform-icon facebook">
+
+                        <img
+                            src="{{ url_for('static', filename='images/face.png') }}"
+                            alt="Facebook"
+                        >
+
+                    </span>
+
+
+                    <span class="connect-platform-text">
+
+                        <strong>
+                            Facebook
+                        </strong>
+
+                        <small>
+                            Connect with us
+                        </small>
+
+                    </span>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span class="connect-platform-icon instagram">
+
+                        <img
+                            src="{{ url_for('static', filename='images/insta.png') }}"
+                            alt="Instagram"
+                        >
+
+                    </span>
+
+
+                    <span class="connect-platform-text">
+
+                        <strong>
+                            Instagram
+                        </strong>
+
+                        <small>
+                            Follow our journey
+                        </small>
+
+                    </span>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+
+                <!-- LINKEDIN -->
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span class="connect-platform-icon linkedin">
+
+                        <img
+                            src="{{ url_for('static', filename='images/link.png') }}"
+                            alt="LinkedIn"
+                        >
+
+                    </span>
+
+
+                    <span class="connect-platform-text">
+
+                        <strong>
+                            LinkedIn
+                        </strong>
+
+                        <small>
+                            Professional network
+                        </small>
+
+                    </span>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <footer>
+
+        <div class="footer-brand">
+            MANSORA Consulting & Business Solutions
+        </div>
+
+
+        <p class="footer-tagline">
+            We Make Your Business Better.
+        </p>
+
+
+        <p class="footer-values">
+            Clarity • Integrity • Responsiveness • Impact
+        </p>
+
+
+        <div class="footer-divider"></div>
+
+
+        <p class="footer-copyright">
+            © 2026 MANSORA Consulting & Business Solutions.
+            All Rights Reserved.
+        </p>
+
+
+        <div class="footer-divider"></div>
+
+
+        <p class="footer-quick-links">
+
+            <a href="{{ url_for('home') }}">
+                Home
+            </a>
+
+            <a href="{{ url_for('about') }}">
+                About Us
+            </a>
+
+            <a href="{{ url_for('services') }}">
+                Services
+            </a>
+
+            <a href="{{ url_for('approach') }}">
+                Our Approach
+            </a>
+
+            <a href="{{ url_for('why_mansora') }}">
+                Why MANSORA
+            </a>
+
+            <a href="{{ url_for('who_we_serve') }}">
+                Who We Serve
+            </a>
+
+            <a href="{{ url_for('contact_us') }}">
+                Contact Us
+            </a>
+
+        </p>
+
+
+        <div class="hero-logo">
+
+            <img
+                src="{{ url_for('static', filename='images/MANSORA.png') }}"
+                alt="MANSORA Consulting Services Logo"
+            >
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+
+
+    <!-- =========================================================
+         MANSORA — GOOGLE TRANSLATE ENGINE
+         ========================================================= -->
+
+         <div
+         id="google_translate_element"
+         style="display:none !important;"
+         aria-hidden="true"
+     ></div>
+
+    <script>
+
+        function googleTranslateElementInit() {
+
+            new google.translate.TranslateElement({
+
+                pageLanguage: 'en',
+
+                includedLanguages:
+                    'en,fr,es,de,pt,it,ar,zh-CN,ja,ko',
+
+                autoDisplay: false
+
+            }, 'google_translate_element');
+
+        }
+
+    </script>
+
+
+    <script
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+
+    <!-- MANSORA GLOBAL JAVASCRIPT -->
+
+    <script
+        src="{{ url_for('static', filename='js/main.js') }}">
+    </script>
+
+
+</body>
+
+</html>
+```
